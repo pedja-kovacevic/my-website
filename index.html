@@ -2,25 +2,115 @@
 <html lang="en">
 <head>
   <script>
-  if (window.top !== window.self) {
-    window.top.location = window.location;
-  }
-</script>
+    if (window.top !== window.self) {
+      window.top.location = window.location;
+    }
+  </script>
   <meta name="description" content="Official website of Pedja Kovacevic, Assistant Professor in English Linguistics. Research in formal syntax, semantics, and morphology.">
-<meta name="keywords" content="Pedja Kovacevic, Linguistics, Syntax, Semantics, Morphology, Research, Academic">
-<meta name="author" content="Pedja Kovacevic">
-<meta name="robots" content="index, follow">
+  <meta name="keywords" content="Pedja Kovacevic, Linguistics, Syntax, Semantics, Morphology, Research, Academic">
+  <meta name="author" content="Pedja Kovacevic">
+  <meta name="robots" content="index, follow">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Predrag Kovačević - Academic Website</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Consistent container styling for all content sections */
+    /* Global container styling for content sections */
     .content-box {
       max-width: 750px;
       margin: 0 auto;
       padding: 20px;
       text-align: justify;
+    }
+
+    /* Header & Navigation styling */
+    header {
+      background: #f4f4f4;
+      padding: 10px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #0073e6;
+      font-size: 1em;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* CV Download Button styling */
+    .cv-download {
+      display: inline-block;
+      background: #0073e6;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+    .cv-download:hover {
+      background: #005bb5;
+    }
+
+    /* Social Links styling (without logos) */
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .social-links a {
+      display: block;
+      text-decoration: none;
+      color: #0073e6;
+      font-size: 16px;
+      border: 2px solid #0073e6;
+      padding: 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      text-align: center;
+    }
+    .social-links a:hover {
+      background-color: #0073e6;
+      color: #fff;
+    }
+
+    /* Publications toggle button styling */
+    .toggle-button {
+      background: #0073e6;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+    .toggle-button:hover {
+      background: #005bb5;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+      margin-top: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -38,33 +128,21 @@
     </nav>
   </header>
 
-   <section id="about" class="content-box">
+  <section id="about" class="content-box">
     <h2>About Me</h2>
     <p>
       I am a linguist and an assistant professor in the English Department at the University of Novi Sad, Serbia.
     </p>
-    <p>
-      <a href="CV-Pedja-Kovacevic.pdf" download>📝 Download My CV</a>
+    <p style="text-align: center;">
+      <a class="cv-download" href="CV-Pedja-Kovacevic.pdf" download>📝 Download My CV</a>
     </p>
     <div class="social-links">
-      <a href="https://scholar.google.com/citations?user=Ffj7avsAAAAJ&hl=en&oi=sra" target="_blank">
-        <img src="images/google-scholar.png" alt="Google Scholar">Google Scholar
-      </a>
-      <a href="https://orcid.org/0000-0003-2545-9240" target="_blank">
-        <img src="images/orcid.png" alt="ORCID">ORCID
-      </a>
-      <a href="https://github.com/pedja-kovacevic" target="_blank">
-        <img src="images/github.png" alt="GitHub">GitHub
-      </a>
-      <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Kova%C4%8Devi%C4%87%2C%20Predrag%22&l=list&p=1&s=10&sort=bestmatch" target="_blank">
-        <img src="images/zenodo.png" alt="Zenodo">Zenodo
-      </a>
-      <a href="https://www.linkedin.com/in/predrag-kova%C4%8Devi%C4%87-70a12b6b/?originalSubdomain=rs" target="_blank">
-        <img src="images/linkedin.png" alt="LinkedIn">LinkedIn
-      </a>
-      <a href="https://www.ff.uns.ac.rs/sr/fakultet/odseci/anglistika/zaposleni/predrag-kovacevic" target="_blank">
-        <img src="images/university.png" alt="University of Novi Sad">University of Novi Sad Personal Page (in Serbian)
-      </a>
+      <a href="https://scholar.google.com/citations?user=Ffj7avsAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>
+      <a href="https://orcid.org/0000-0003-2545-9240" target="_blank">ORCID</a>
+      <a href="https://github.com/pedja-kovacevic" target="_blank">GitHub</a>
+      <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Kova%C4%8Devi%C4%87%2C%20Predrag%22&l=list&p=1&s=10&sort=bestmatch" target="_blank">Zenodo</a>
+      <a href="https://www.linkedin.com/in/predrag-kova%C4%8Devi%C4%87-70a12b6b/?originalSubdomain=rs" target="_blank">LinkedIn</a>
+      <a href="https://www.ff.uns.ac.rs/sr/fakultet/odseci/anglistika/zaposleni/predrag-kovacevic" target="_blank">University of Novi Sad Personal Page (in Serbian)</a>
     </div>
   </section>
 
@@ -81,125 +159,106 @@
     </p>
   </section>
 
-<section id="publications" class="content-box">
-  <h2>Publications</h2>
+  <section id="publications" class="content-box">
+    <h2>Publications</h2>
 
-  <!-- Journal Articles -->
-  <div class="pub-category" id="journal-articles">
-    <h3>Journal Articles</h3>
-    <!-- Recent entries (2020 and later) -->
-    <ul class="recent-publications">
-      <li data-year="2024">
-        Kovacević, P., & Simonović, M. (2024). <em>Aspect of nje/će nominalizations in Pannonian Rusyn and its related and neighboring languages</em>. <em>Ruthenian Studies</em>. [<a href="https://example.com/paper1" target="_blank">Link</a>]
-      </li>
-      <li data-year="2024">
-        Kovacević, P., Arsenijević, B., & Milićević, T. (2024). <em>A concreteness effect in morphosyntactic variation: Evidence from the variation in the choice of clausal complements in Serbo-Croatian</em>. <em>Psihologija</em>. [<a href="https://example.com/paper2" target="_blank">Link</a>]
-      </li>
-      <li data-year="2023">
-        Kovacević, P., Jakovljević, B. (2023). <em>The prosodic correlates of the grammaticalization scale: A case study of the Serbian lexical, modal, and auxiliary uses of hteti (‘want’)</em>. <em>Teme: A Journal for Social Sciences, 48</em>(2), 327–341. [<a href="https://example.com/paper3" target="_blank">Link</a>]
-      </li>
-      <!-- More recent entries as needed -->
-    </ul>
-    <!-- Toggle older entries -->
-    <button class="toggle-button" onclick="togglePublications('older-journal-articles')">Show More</button>
-    <ul class="older-publications" id="older-journal-articles" style="display: none;">
-      <li data-year="2020">
-        Kovacević, P., Antonyuk, S., & Quaglia, S. (2020). <em>The status of verbal theme vowels in contemporary linguistic theorizing: Some recent developments</em>. <em>Glossa, 9</em>(1), 1–40. [<a href="https://example.com/paper4" target="_blank">Link</a>]
-      </li>
-      <li data-year="2018">
-        Kovacević, P. (2018). <em>On the internal structure of Serbian -(n)je nominalizations</em>. <em>Acta Linguistica Academica, 68</em>(4), 426–453. [<a href="https://example.com/paper5" target="_blank">Link</a>]
-      </li>
-      <!-- Additional older entries -->
-    </ul>
-  </div>
+    <!-- Journal Articles -->
+    <div class="pub-category" id="journal-articles">
+      <h3>Journal Articles</h3>
+      <!-- Recent entries (2020 and later) -->
+      <ul class="recent-publications">
+        <li data-year="2024">
+          Kovacević, P., &amp; Simonović, M. (2024). <em>Aspect of nje/će nominalizations in Pannonian Rusyn and its related and neighboring languages</em>. <em>Ruthenian Studies</em>. [<a href="https://example.com/paper1" target="_blank">Link</a>]
+        </li>
+        <li data-year="2024">
+          Kovacević, P., Arsenijević, B., &amp; Milićević, T. (2024). <em>A concreteness effect in morphosyntactic variation: Evidence from the variation in the choice of clausal complements in Serbo-Croatian</em>. <em>Psihologija</em>. [<a href="https://example.com/paper2" target="_blank">Link</a>]
+        </li>
+        <li data-year="2023">
+          Kovacević, P., Jakovljević, B. (2023). <em>The prosodic correlates of the grammaticalization scale: A case study of the Serbian lexical, modal, and auxiliary uses of hteti (‘want’)</em>. <em>Teme: A Journal for Social Sciences, 48</em>(2), 327–341. [<a href="https://example.com/paper3" target="_blank">Link</a>]
+        </li>
+      </ul>
+      <!-- Toggle older entries -->
+      <button class="toggle-button" onclick="togglePublications('older-journal-articles')">Show More</button>
+      <ul class="older-publications" id="older-journal-articles" style="display: none;">
+        <li data-year="2020">
+          Kovacević, P., Antonyuk, S., &amp; Quaglia, S. (2020). <em>The status of verbal theme vowels in contemporary linguistic theorizing: Some recent developments</em>. <em>Glossa, 9</em>(1), 1–40. [<a href="https://example.com/paper4" target="_blank">Link</a>]
+        </li>
+        <li data-year="2018">
+          Kovacević, P. (2018). <em>On the internal structure of Serbian -(n)je nominalizations</em>. <em>Acta Linguistica Academica, 68</em>(4), 426–453. [<a href="https://example.com/paper5" target="_blank">Link</a>]
+        </li>
+      </ul>
+    </div>
 
-  <!-- Chapters -->
-  <div class="pub-category" id="chapters">
-    <h3>Chapters</h3>
-    <ul class="recent-publications">
-      <li data-year="2022">
-        Kovacević, P. (2022). <em>What governs the choice between infinitives and finite complements in Serbo-Croatian? Quantitative data from Northern Serbian</em>. In D. Serés et al. (Eds.), <em>Advances in Formal Slavic Linguistics 2023</em> (pp. xx–xx). Berlin: Language Science Press. [<a href="https://example.com/chapter1" target="_blank">Link</a>]
-      </li>
-      <li data-year="2022">
-        Kovacević, P., & Simonović, M. (2022). <em>When -nie met -nje: Slavonic-Serbian loan deverbal nominals</em>. In D. Serés et al. (Eds.), <em>Advances in Formal Slavic Linguistics 2023</em> (pp. xx–xx). Berlin: Language Science Press. [<a href="https://example.com/chapter2" target="_blank">Link</a>]
-      </li>
-    </ul>
-    <button class="toggle-button" onclick="togglePublications('older-chapters')">Show More</button>
-    <ul class="older-publications" id="older-chapters" style="display: none;">
-      <li data-year="2016">
-        Kovacević, P., et al. (2016). <em>Case suffixes as theta role signals</em>. In B. Vujin &amp; M. Radin-Sabadoš (Eds.), <em>English Studies Today: Words and Visions</em> (pp. 317–332). Novi Sad: Faculty of Philosophy. [<a href="https://example.com/chapter3" target="_blank">Link</a>]
-      </li>
-      <!-- Additional older entries -->
-    </ul>
-  </div>
+    <!-- Chapters -->
+    <div class="pub-category" id="chapters">
+      <h3>Chapters</h3>
+      <ul class="recent-publications">
+        <li data-year="2022">
+          Kovacević, P. (2022). <em>What governs the choice between infinitives and finite complements in Serbo-Croatian? Quantitative data from Northern Serbian</em>. In D. Serés et al. (Eds.), <em>Advances in Formal Slavic Linguistics 2023</em> (pp. xx–xx). Berlin: Language Science Press. [<a href="https://example.com/chapter1" target="_blank">Link</a>]
+        </li>
+        <li data-year="2022">
+          Kovacević, P., &amp; Simonović, M. (2022). <em>When -nie met -nje: Slavonic-Serbian loan deverbal nominals</em>. In D. Serés et al. (Eds.), <em>Advances in Formal Slavic Linguistics 2023</em> (pp. xx–xx). Berlin: Language Science Press. [<a href="https://example.com/chapter2" target="_blank">Link</a>]
+        </li>
+      </ul>
+      <button class="toggle-button" onclick="togglePublications('older-chapters')">Show More</button>
+      <ul class="older-publications" id="older-chapters" style="display: none;">
+        <li data-year="2016">
+          Kovacević, P., et al. (2016). <em>Case suffixes as theta role signals</em>. In B. Vujin &amp; M. Radin-Sabadoš (Eds.), <em>English Studies Today: Words and Visions</em> (pp. 317–332). Novi Sad: Faculty of Philosophy. [<a href="https://example.com/chapter3" target="_blank">Link</a>]
+        </li>
+      </ul>
+    </div>
 
-  <!-- Theses and Dissertations -->
-  <div class="pub-category" id="theses">
-    <h3>Theses and Dissertations</h3>
-    <ul>
-      <li data-year="2022">
-        Kovacević, P. (2022). <em>Syntax and Semantics of Psych Verbs in English and Serbian</em> (Doctoral Dissertation). University of Novi Sad. [<a href="https://example.com/dissertation" target="_blank">Link</a>]
-      </li>
-      <li data-year="2014">
-        Kovacević, P. (2014). <em>A (Very) Minimal Syntax: On the Relationship of DP, Scrambling, and Case</em> (MA Thesis). University of Novi Sad. [<a href="https://example.com/ma-thesis" target="_blank">Link</a>]
-      </li>
-    </ul>
-  </div>
+    <!-- Theses and Dissertations -->
+    <div class="pub-category" id="theses">
+      <h3>Theses and Dissertations</h3>
+      <ul>
+        <li data-year="2022">
+          Kovacević, P. (2022). <em>Syntax and Semantics of Psych Verbs in English and Serbian</em> (Doctoral Dissertation). University of Novi Sad. [<a href="https://example.com/dissertation" target="_blank">Link</a>]
+        </li>
+        <li data-year="2014">
+          Kovacević, P. (2014). <em>A (Very) Minimal Syntax: On the Relationship of DP, Scrambling, and Case</em> (MA Thesis). University of Novi Sad. [<a href="https://example.com/ma-thesis" target="_blank">Link</a>]
+        </li>
+      </ul>
+    </div>
 
-  <!-- Presentations -->
-  <div class="pub-category" id="presentations">
-    <h3>Presentations</h3>
-    <ul class="recent-publications">
-      <li data-year="2024">
-        Kovacević, P. (2024). <em>Severing affixes from categories and borrowed derivations</em>. BCGL 17: Categories &amp; Categorization, December 12–13, 2024. [<a href="https://example.com/presentation1" target="_blank">Slides</a>]
-      </li>
-      <li data-year="2024">
-        Kovacević, P., &amp; Stanković, B. (2024). <em>Dialectal discrimination at work: The case of infinitive and finite complements in Serbian</em>. Language, Literature, Intersectionality, University of Niš, April 21–22, 2024. [<a href="https://example.com/presentation2" target="_blank">Slides</a>]
-      </li>
-    </ul>
-    <button class="toggle-button" onclick="togglePublications('older-presentations')">Show More</button>
-    <ul class="older-publications" id="older-presentations" style="display: none;">
-      <li data-year="2019">
-        Kovacević, P. (2019). <em>Not all object experiencers are the same: Evidence from SE anti-causatives with Serbian psych verbs</em>. In <em>Syntax and Semantics of Internal Arguments</em>, University of Bucharest and University of Cologne, October 24–25, 2019. [<a href="https://example.com/presentation3" target="_blank">Slides</a>]
-      </li>
-      <!-- Additional older entries -->
-    </ul>
-  </div>
+    <!-- Presentations -->
+    <div class="pub-category" id="presentations">
+      <h3>Presentations</h3>
+      <ul class="recent-publications">
+        <li data-year="2024">
+          Kovacević, P. (2024). <em>Severing affixes from categories and borrowed derivations</em>. BCGL 17: Categories &amp; Categorization, December 12–13, 2024. [<a href="https://example.com/presentation1" target="_blank">Slides</a>]
+        </li>
+        <li data-year="2024">
+          Kovacević, P., &amp; Stanković, B. (2024). <em>Dialectal discrimination at work: The case of infinitive and finite complements in Serbian</em>. Language, Literature, Intersectionality, University of Niš, April 21–22, 2024. [<a href="https://example.com/presentation2" target="_blank">Slides</a>]
+        </li>
+      </ul>
+      <button class="toggle-button" onclick="togglePublications('older-presentations')">Show More</button>
+      <ul class="older-publications" id="older-presentations" style="display: none;">
+        <li data-year="2019">
+          Kovacević, P. (2019). <em>Not all object experiencers are the same: Evidence from SE anti-causatives with Serbian psych verbs</em>. In <em>Syntax and Semantics of Internal Arguments</em>, University of Bucharest and University of Cologne, October 24–25, 2019. [<a href="https://example.com/presentation3" target="_blank">Slides</a>]
+        </li>
+      </ul>
+    </div>
 
-  <!-- Invited Talks -->
-  <div class="pub-category" id="invited-talks">
-    <h3>Invited Talks</h3>
-    <ul class="recent-publications">
-      <li data-year="2024">
-        Kovacević, P. (2024). <em>What predicts the choice of clausal complement with modal verbs in Serbian</em>. SinFonIJA 17, University of Nova Gorica, September 27–29, 2024. [<a href="https://example.com/invited1" target="_blank">Link</a>]
-      </li>
-      <li data-year="2023">
-        Kovacević, P., &amp; Stanković, B. (2023). <em>Clausal complements between language structure and identity: Documenting, visualizing and theorizing variation in Shtokavian (non-)finite embedded clauses</em>. Vuk’s Foundation/Institute for Balkan Studies of the Serbian Academy of Sciences and Arts, Belgrade, October 16, 2023. [<a href="https://example.com/invited2" target="_blank">Link</a>]
-      </li>
-    </ul>
-    <button class="toggle-button" onclick="togglePublications('older-invited-talks')">Show More</button>
-    <ul class="older-publications" id="older-invited-talks" style="display: none;">
-      <li data-year="2011">
-        Kovacević, P. (2011). <em>Determinerska fraza u srpskom jeziku? [Determiner phrase in Serbian?]</em>. STULIKON 1, University of Belgrade, May 6–8, 2011. [<a href="https://example.com/invited-old" target="_blank">Link</a>]
-      </li>
-      <!-- Additional older entries -->
-    </ul>
-  </div>
-
-</section>
-
-<!-- JavaScript to toggle the "Show More" functionality -->
-<script>
-  function togglePublications(id) {
-    var elem = document.getElementById(id);
-    if (elem.style.display === "none" || elem.style.display === "") {
-      elem.style.display = "block";
-    } else {
-      elem.style.display = "none";
-    }
-  }
-</script>
-
+    <!-- Invited Talks -->
+    <div class="pub-category" id="invited-talks">
+      <h3>Invited Talks</h3>
+      <ul class="recent-publications">
+        <li data-year="2024">
+          Kovacević, P. (2024). <em>What predicts the choice of clausal complement with modal verbs in Serbian</em>. SinFonIJA 17, University of Nova Gorica, September 27–29, 2024. [<a href="https://example.com/invited1" target="_blank">Link</a>]
+        </li>
+        <li data-year="2023">
+          Kovacević, P., &amp; Stanković, B. (2023). <em>Clausal complements between language structure and identity: Documenting, visualizing and theorizing variation in Shtokavian (non-)finite embedded clauses</em>. Vuk’s Foundation/Institute for Balkan Studies of the Serbian Academy of Sciences and Arts, Belgrade, October 16, 2023. [<a href="https://example.com/invited2" target="_blank">Link</a>]
+        </li>
+      </ul>
+      <button class="toggle-button" onclick="togglePublications('older-invited-talks')">Show More</button>
+      <ul class="older-publications" id="older-invited-talks" style="display: none;">
+        <li data-year="2011">
+          Kovacević, P. (2011). <em>Determinerska fraza u srpskom jeziku? [Determiner phrase in Serbian?]</em>. STULIKON 1, University of Belgrade, May 6–8, 2011. [<a href="https://example.com/invited-old" target="_blank">Link</a>]
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <section id="contact" class="content-box">
     <h2>Contact</h2>
@@ -215,30 +274,17 @@
     <p>&copy; 2024 Pedja Kovacevic. All rights reserved.</p>
   </footer>
 
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
+  <!-- JavaScript for toggling "Show More" sections in Publications -->
   <script>
-  if (window.top !== window.self) {
-    window.top.location = window.location;
-  }
-</script>
-  <meta name="description" content="Official website of Pedja Kovacevic, Assistant Professor in English Linguistics. Research in formal syntax, semantics, and morphology.">
-  <meta name="keywords" content="Pedja Kovacevic, Linguistics, Syntax, Semantics, Morphology, Research, Academic">
-  <meta name="author" content="Pedja Kovacevic">
-  <meta name="robots" content="index, follow">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Predrag Kovačević - Academic Website</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .content-box {
-      max-width: 750px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: justify;
+    function togglePublications(id) {
+      var elem = document.getElementById(id);
+      if (elem.style.display === "none" || elem.style.display === "") {
+        elem.style.display = "block";
+      } else {
+        elem.style.display = "none";
+      }
     }
-  </style>
-</head>
-<body>
+  </script>
+
+</body>
+</html>
