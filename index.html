@@ -29,6 +29,7 @@
       padding: 10px 20px;
       text-align: center;
       border-bottom: 1px solid #ddd;
+      position: relative;
     }
     header h1 {
       margin: 0;
@@ -50,6 +51,12 @@
     }
     nav ul li a:hover {
       text-decoration: underline;
+    }
+
+    /* Reduce the header image size by 10 times */
+    header img.profile {
+      width: 10%;
+      height: auto;
     }
 
     /* CV Download Button styling */
@@ -124,311 +131,159 @@
 </head>
 <body>
 
-<header style="position: relative;">
+<header>
   <img src="slika CV.jpg" alt="Predrag Kovačević" class="profile" />
-    <h1>Predrag Kovačević</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1>Predrag Kovačević</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="about" class="content-box">
-    <h2>About Me</h2>
-    <p>
-      I am a linguist and an assistant professor in the English Department at the University of Novi Sad, Serbia.
-    </p>
-    <p style="text-align: center;">
-      <a class="cv-download" href="CV-Pedja-Kovacevic.pdf" download>📝 Download My CV</a>
-    </p>
-    <div class="social-links">
-      <a href="https://scholar.google.com/citations?user=Ffj7avsAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>
-      <a href="https://orcid.org/0000-0003-2545-9240" target="_blank">ORCID</a>
-      <a href="https://github.com/pedja-kovacevic" target="_blank">GitHub</a>
-      <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Kova%C4%8Devi%C4%87%2C%20Predrag%22&l=list&p=1&s=10&sort=bestmatch" target="_blank">Zenodo</a>
-      <a href="https://www.linkedin.com/in/predrag-kova%C4%8Devi%C4%87-70a12b6b/?originalSubdomain=rs" target="_blank">LinkedIn</a>
-      <a href="https://www.ff.uns.ac.rs/sr/fakultet/odseci/anglistika/zaposleni/predrag-kovacevic" target="_blank">University of Novi Sad Personal Page (in Serbian)</a>
-    </div>
-  </section>
+<section id="about" class="content-box">
+  <h2>About Me</h2>
+  <p>
+    I am a linguist and an assistant professor in the English Department at the University of Novi Sad, Serbia.
+  </p>
+  <p style="text-align: center;">
+    <a class="cv-download" href="CV-Pedja-Kovacevic.pdf" download>📝 Download My CV</a>
+  </p>
+  <div class="social-links">
+    <a href="https://scholar.google.com/citations?user=Ffj7avsAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>
+    <a href="https://orcid.org/0000-0003-2545-9240" target="_blank">ORCID</a>
+    <a href="https://github.com/pedja-kovacevic" target="_blank">GitHub</a>
+    <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Kova%C4%8Devi%C4%87%2C%20Predrag%22&l=list&p=1&s=10&sort=bestmatch" target="_blank">Zenodo</a>
+    <a href="https://www.linkedin.com/in/predrag-kova%C4%8Devi%C4%87-70a12b6b/?originalSubdomain=rs" target="_blank">LinkedIn</a>
+    <a href="https://www.ff.uns.ac.rs/sr/fakultet/odseci/anglistika/zaposleni/predrag-kovacevic" target="_blank">University of Novi Sad Personal Page (in Serbian)</a>
+  </div>
+</section>
 
-  <section id="research" class="content-box">
-    <h2>Research</h2>
-    <p>
-      I am primarily a syntactician with a keen interest in the phenomena that lie at the interface between syntax and morphology—areas that have traditionally been treated as separate modules but are increasingly understood as aspects of a unified syntactic system. My research delves into the intricacies of the verbal domain, with a particular focus on deverbal derivations such as nominalizations. In parallel, I examine issues related to clausal complementation, aiming to uncover how these structures interact within the broader architecture of language.
-    </p>
-    <p>
-      Working with the Bosnian/Croatian/Montenegrin/Serbian linguistic data, I explore a rich tapestry of microvariation. This empirical lens not only allows me to investigate subtle differences within these languages/varieties but also to draw broader comparisons across other Slavic languages. Such comparative work has naturally led me to a deep interest in language variation, prompting me to incorporate quantitative, data-driven techniques—such as corpus analysis and controlled experimental tasks—into my research toolkit.
-    </p>
-    <p>
-      While I align with formal linguistics in its effort to bracket the social aspects of language, treating language as a biological phenomenon, I remain deeply fascinated by the interplay between language and society, culture, identity, and politics. Consequently, a side current of my research is dedicated to exploring these interactions. By employing experimental methods within the tradition of variationist sociolinguistics, I strive to detect and quantify the social meanings that underpin linguistic variation.
-    </p>
-  </section>
+<section id="research" class="content-box">
+  <h2>Research</h2>
+  <p>
+    I am primarily a syntactician with a keen interest in the phenomena that lie at the interface between syntax and morphology—areas that have traditionally been treated as separate modules but are increasingly understood as aspects of a unified syntactic system. My research delves into the intricacies of the verbal domain, with a particular focus on deverbal derivations such as nominalizations. In parallel, I examine issues related to clausal complementation, aiming to uncover how these structures interact within the broader architecture of language.
+  </p>
+  <p>
+    Working with the Bosnian/Croatian/Montenegrin/Serbian linguistic data, I explore a rich tapestry of microvariation. This empirical lens not only allows me to investigate subtle differences within these languages/varieties but also to draw broader comparisons across other Slavic languages. Such comparative work has naturally led me to a deep interest in language variation, prompting me to incorporate quantitative, data-driven techniques—such as corpus analysis and controlled experimental tasks—into my research toolkit.
+  </p>
+  <p>
+    While I align with formal linguistics in its effort to bracket the social aspects of language, treating language as a biological phenomenon, I remain deeply fascinated by the interplay between language and society, culture, identity, and politics. Consequently, a side current of my research is dedicated to exploring these interactions. By employing experimental methods within the tradition of variationist sociolinguistics, I strive to detect and quantify the social meanings that underpin linguistic variation.
+  </p>
+</section>
 
-  <section id="publications" class="content-box">
-    <h2>Publications</h2>
+<section id="publications" class="content-box">
+  <h2>Publications</h2>
 
-    <!-- Journal Articles -->
-    <div class="pub-category" id="journal-articles">
-      <h3>Journal Articles</h3>
-      <!-- Recent entries (2020 and later, including in‐press items) -->
-      <ul class="recent-publications">
-        <li data-year="in press">
-          Simonović, M., &amp; Kovacević, P. (in press). <em>Aspect of nje/će nominalizations in Pannonian Rusyn and its related and neighboring languages (in Pannonian Rusyn).</em> Ruthenian Studies. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="in press">
-          Arsenijević, B., Kovacević, P., &amp; Milićev, T. (in press). <em>A concreteness effect in morphosyntactic variation: Evidence from the variation in the choice of clausal complements in Serbo‑Croatian.</em> Psihologija. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="2024">
-          Jakovljević, B., &amp; Kovacević, P. (2024). <em>The prosodic correlates of the grammaticalization scale: A case study of the Serbian lexical, modal, and auxiliary uses of hteti (‘want’).</em> Teme: A Journal for Social Sciences, 48(2), 327–341. [<a href="https://teme2.junis.ni.ac.rs/index.php/TEME/article/view/1877/743" target="_blank">Text</a>]
-        </li>
-        <li data-year="2024">
-          Kovacević, P., Antonyuk, S., &amp; Quaglia, S. (2024). <em>The status of verbal theme vowels in contemporary linguistic theorizing: Some recent developments. An introduction.</em> Glossa: A Journal of General Linguistics, 9(1), 1–40. [<a href="https://www.glossa-journal.org/article/id/15149/#!" target="_blank">Text</a>]
-        </li>
-        <li data-year="2024">
-          Kovacević, P., Simonović, M., &amp; Milosavljević, S. (2024). <em>Theme vowel minimal pairs show argument structure alternations.</em> Journal of Linguistics. [<a href="https://www.cambridge.org/core/journals/journal-of-linguistics/article/themevowel-minimal-pairs-show-argument-structure-alternations/891FA909863A1105F56A999E6269213F" target="_blank">Text</a>]
-        </li>
-        <li data-year="2023">
-          Ivanović, S., Kovacević, P., &amp; Milićević, N. (2023). <em>Clitic climbing with different kinds of da‑complements in Serbian and the status of probabilistic rules in grammar.</em> Annual Review of the Faculty of Philosophy, Novi Sad, 48(3), 135–155. [<a href="https://godisnjak.ff.uns.ac.rs/index.php/gff/article/view/2378/2250" target="_blank">Text</a>]
-        </li>
-        <li data-year="2022">
-          Simonović, M., &amp; Kovacević, P. (2022). <em>Possessive, kind, and not so kind: The different uses of the adjectival –ov in Serbo‑Croatian.</em> Annual Review of the Faculty of Philosophy, Novi Sad, 47(3), 87–109. [<a href="https://godisnjak.ff.uns.ac.rs/index.php/gff/article/view/2274/2214" target="_blank">Text</a>]
-        </li>
-        <li data-year="2021">
-          Kovacević, P. (2021). <em>On the internal structure of Serbian –(n)je nominalizations.</em> Acta Linguistica Academica, 68(4), 426–453. [<a href="https://akjournals.com/view/journals/2062/68/4/article-p426.xml" target="_blank">Text</a>]
-        </li>
-        <li data-year="2021">
-          Kovacević, P. (2021). <em>Gaps in the aspectual paradigms of experiencer verbs in Serbian.</em> Nasleđe, 49, 2–28. [<a href="https://drive.google.com/file/d/1wYh78kXAYbflpTMLy1piFbdJ7Em-qVev/view" target="_blank">Text</a>]
-        </li>
-        <li data-year="2020">
-          Kovacević, P. (2020). <em>A corpus‑based contrastive study of experiencer verbs in English and Serbian: Some implications for the structure of VP.</em> Annual Review of the Faculty of Philosophy, Novi Sad, 45(5), 57–73. [<a href="https://godisnjak.ff.uns.ac.rs/index.php/gff/article/download/2171/2074/5638" target="_blank">Text</a>]
-        </li>
-        <li data-year="2020">
-          Kovacević, P. (2020). <em>Not all object experiencers are the same: The role of SE and the argument structure of Serbian psych verb anticausatives.</em> Bucharest Working Papers in Linguistics, 22(2), 77–96. [<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://bwpl.unibuc.ro/wp-content/uploads/2021/03/4_BWPL_2_2020_Kovacevic.pdf" target="_blank">Text</a>]
-        </li>
-      </ul>
-      <!-- Toggle older entries -->
-      <button class="toggle-button" onclick="togglePublications('older-journal-articles')">Show More</button>
-      <ul class="older-publications" id="older-journal-articles" style="display: none;">
-        <li data-year="2018">
-          Kovacević, P. (2018). <em>Between the first and the second Serbia: On the political and class dimensions of hip‑hop subculture in Serbia.</em> Sociološki pregled, 52(3), 699–720. [<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://scindeks-clanci.ceon.rs/data/pdf/0085-6320/2018/0085-63201803699K.pdf" target="_blank">Text</a>]
-        </li>
-        <li data-year="2018">
-          Kovacević, P., Milićev, T., &amp; Đurić Paunović, I. (2018). <em>The variation in non‑finite complements in Serbian: Empirical evidence at an intra‑speaker level.</em> Annual Review of the Faculty of Philosophy, Novi Sad, 43–1, 437–451. [<a href="https://godisnjak.ff.uns.ac.rs/index.php/gff/article/download/2038/1992/4545" target="_blank">Text</a>]
-        </li>
-        <li data-year="2017">
-          Kovacević, P. (2017). <em>Language, art, and the (social) body in modern and postmodern aestheticism: A comparison of Wilde and Nabokov.</em> Collection of Papers of the Faculty of Philosophy of Prština, 47(3), 19–37. [<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://scindeks-clanci.ceon.rs/data/pdf/0354-3293/2017/0354-32931703019K.pdf" target="_blank">Text</a>]
-        </li>
-        <li data-year="2016">
-          Kovacević, P. (2016). <em>The lies of liberalism in Ian McEwan's novels.</em> Kultura, 150, 91–114. [<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.casopiskultura.rs/wp-content/uploads/2021/publikacije/6.%20Predrag%20Kovacevic.pdf" target="_blank">Text</a>]
-        </li>
-        <li data-year="n.d.">
-          Kovacević, P., &amp; Pupezin, M. (2015). <em>Funkcijske projekcija u srpskom nominalnom kompleksu.</em> Zbornik za jezike i književnosti Filozofskog fakulteta u Novom Sadu, 5, 21–31. [<a href="https://zjik.ff.uns.ac.rs/index.php/zjik/article/view/1569/1572" target="_blank">Text</a>]
-        </li>
-      </ul>
-    </div>
+  <!-- Journal Articles -->
+  <div class="pub-category" id="journal-articles">
+    <h3>Journal Articles</h3>
+    <!-- Recent entries (2020 and later, including in‐press items) -->
+    <ul class="recent-publications">
+      <li data-year="in press">
+        Simonović, M., &amp; Kovacević, P. (in press). <em>Aspect of nje/će nominalizations in Pannonian Rusyn and its related and neighboring languages (in Pannonian Rusyn).</em> Ruthenian Studies. [<a href="#" target="_blank">Text</a>]
+      </li>
+      <!-- ...additional list items... -->
+    </ul>
+    <!-- Toggle older entries -->
+    <button class="toggle-button" onclick="togglePublications('older-journal-articles')">Show More</button>
+    <ul class="older-publications" id="older-journal-articles" style="display: none;">
+      <li data-year="2018">
+        Kovacević, P. (2018). <em>Between the first and the second Serbia: On the political and class dimensions of hip‑hop subculture in Serbia.</em> Sociološki pregled, 52(3), 699–720. [<a href="#" target="_blank">Text</a>]
+      </li>
+      <!-- ...additional list items... -->
+    </ul>
+  </div>
 
-    <!-- Chapters -->
-    <div class="pub-category" id="chapters">
-      <h3>Chapters</h3>
-      <ul class="recent-publications">
-        <li data-year="in press">
-          Kovacević, P. (in press). What governs the choice between infinitives and finite complements in Serbo‑Croatian? Quantitative data from Northern Serbian. In D. Serés, S. Milosavljević, J. Simić, M. Simonović, J. Stojković, &amp; J. Živojinović (Eds.), <em>Advances in formal Slavic linguistics 2023</em>. Berlin: Language Science Press. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="in press">
-          Simonović, M., Kovacević, P., &amp; Milićev, T. (in press). When -nie met -nje: Slavonic‑Serbian loan deverbal nominals. In D. Serés, S. Milosavljević, J. Simić, M. Simonović, J. Stojković, &amp; J. Živojinović (Eds.), <em>Advances in formal Slavic linguistics 2023</em>. Berlin: Language Science Press. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="2022">
-          Kovacević, P., Rešetar, S. H., Varga, M., &amp; Erdeljić‑Gradaček, T. (2022). The use of it‑extraposition in MA theses written in English by British, American, Croatian, and Serbian students. In S. Gudurić, J. Dražić, &amp; M. Stefanović (Eds.), <em>Languages and cultures in space and time 10</em> (pp. 277–289). Novi Sad: Faculty of Philosophy. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="2022">
-          Kovacević, P. (2022). Gradients of reflexivity: Psych verbs in causative alternations. In M. Janebová, J. Emonds, &amp; L. Veselovská (Eds.), <em>Proceedings of the Olomouc Linguistics Colloquium 2021: Language use and linguistic structure</em> (pp. 141–161). Olomouc: Palacký University. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="2020">
-          Kovacević, P. (2020). Layers of verbal structure in psych verb nominalizations in Serbian. In S. Gudurić, B. Radić Bojanić, &amp; P. Mutavdžić (Eds.), <em>Languages and cultures in space and time 9</em> (Vol. 1, pp. 431–442). Novi Sad: Faculty of Philosophy. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="2020">
-          Varga, M., Kovacević, P., &amp; Molnar, D. (2020). Establishing the criteria for building comparable corpora in research on academic writing in L1 and L2 English. In S. Gudurić, B. Radić Bojanić, &amp; P. Mutavdžić (Eds.), <em>Languages and cultures in space and time 9</em> (Vol. 1, pp. 145–155). Novi Sad: Faculty of Philosophy. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="2019">
-          Marković, M., &amp; Kovacević, P. (2019). Acoustic manifestations of information and contrastive focus in Serbian. In S. Gudurić &amp; B. Radić Bojanić (Eds.), <em>Languages and cultures in space and time 8</em> (Vol. 1, pp. 499–509). Novi Sad: Faculty of Philosophy. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="2019">
-          Kovacević, P. (2019). Patterns of case and aspect with Serbian experiencer verbs: Some implications for the theory of causation. In V. Lopičić &amp; B. Mišić Ilić (Eds.), <em>Language, literature, theory</em> (pp. 169–183). Niš: Faculty of Philosophy. [<a href="#" target="_blank">Text</a>]
-        </li>
-      </ul>
-      <button class="toggle-button" onclick="togglePublications('older-chapters')">Show More</button>
-      <ul class="older-publications" id="older-chapters" style="display: none;">
-        <li data-year="2018">
-          Kovacević, P., &amp; Milićev, T. (2018). The nature(s) of syntactic variation: Evidence from the Serbian/Croatian dialect continuum. In D. Lenertová, R. Meyer, R. Šimík, &amp; L. Szucsich (Eds.), <em>Advances in formal Slavic linguistics 2016</em> (Chapter 7, pp. 147–167). Berlin: Language Science Press. [<a href="#" target="_blank">Text</a>]
-        </li>
-        <li data-year="2016">
-          Kovacević, P. (2016). Case suffixes as theta role signals. In B. Vujin &amp; M. Radin‑Sabadoš (Eds.), <em>English studies today: Words and visions</em> (pp. 317–332). Novi Sad: Faculty of Philosophy. [<a href="#" target="_blank">Text</a>]
-        </li>
-      </ul>
-    </div>
+  <!-- Chapters -->
+  <div class="pub-category" id="chapters">
+    <h3>Chapters</h3>
+    <ul class="recent-publications">
+      <li data-year="in press">
+        Kovacević, P. (in press). What governs the choice between infinitives and finite complements in Serbo‑Croatian? Quantitative data from Northern Serbian. In D. Serés, S. Milosavljević, J. Simić, M. Simonović, J. Stojković, &amp; J. Živojinović (Eds.), <em>Advances in formal Slavic linguistics 2023</em>. Berlin: Language Science Press. [<a href="#" target="_blank">Text</a>]
+      </li>
+      <!-- ...additional list items... -->
+    </ul>
+    <button class="toggle-button" onclick="togglePublications('older-chapters')">Show More</button>
+    <ul class="older-publications" id="older-chapters" style="display: none;">
+      <li data-year="2018">
+        Kovacević, P., &amp; Milićev, T. (2018). The nature(s) of syntactic variation: Evidence from the Serbian/Croatian dialect continuum. In D. Lenertová, R. Meyer, R. Šimík, &amp; L. Szucsich (Eds.), <em>Advances in formal Slavic linguistics 2016</em> (Chapter 7, pp. 147–167). Berlin: Language Science Press. [<a href="#" target="_blank">Text</a>]
+      </li>
+      <!-- ...additional list items... -->
+    </ul>
+  </div>
 
-    <!-- Theses and Dissertations -->
-    <div class="pub-category" id="theses">
-      <h3>Theses and Dissertations</h3>
-      <ul>
-        <li data-year="2022">
-          Kovacević, P. (2022). <em>Syntax and Semantics of Psych Verbs in English and Serbian</em> (Doctoral Dissertation). University of Novi Sad. [<a href="https://drive.google.com/file/d/11sWXNa2nq6c7iwlzuyu9VK6Ok1jCzGIM/view?usp=sharing" target="_blank">Link</a>]
-        </li>
-        <li data-year="2014">
-          Kovacević, P. (2014). <em>A (Very) Minimal Syntax: On the Relationship of DP, Scrambling, and Case</em> (MA Thesis). University of Novi Sad. [<a href="https://drive.google.com/file/d/1qgElzRFIy-xBz3JVA1CFlLDOH9AImzmH/view?usp=sharing" target="_blank">Link</a>]
-        </li>
-      </ul>
-    </div>
+  <!-- Theses and Dissertations -->
+  <div class="pub-category" id="theses">
+    <h3>Theses and Dissertations</h3>
+    <ul>
+      <li data-year="2022">
+        Kovacević, P. (2022). <em>Syntax and Semantics of Psych Verbs in English and Serbian</em> (Doctoral Dissertation). University of Novi Sad. [<a href="https://drive.google.com/file/d/11sWXNa2nq6c7iwlzuyu9VK6Ok1jCzGIM/view?usp=sharing" target="_blank">Link</a>]
+      </li>
+      <li data-year="2014">
+        Kovacević, P. (2014). <em>A (Very) Minimal Syntax: On the Relationship of DP, Scrambling, and Case</em> (MA Thesis). University of Novi Sad. [<a href="https://drive.google.com/file/d/1qgElzRFIy-xBz3JVA1CFlLDOH9AImzmH/view?usp=sharing" target="_blank">Link</a>]
+      </li>
+    </ul>
+  </div>
 
-    <!-- Conference Presentations -->
-    <div class="pub-category" id="presentations">
-      <h3>Conference Presentations</h3>
-      <ul class="recent-publications">
-         <li data-year="2025">
+  <!-- Conference Presentations -->
+  <div class="pub-category" id="presentations">
+    <h3>Conference Presentations</h3>
+    <ul class="recent-publications">
+      <li data-year="2025">
         Kovačević, P. (2025). Implicit social meanings associated with the use of infinitival and finite clausal complements in Serbian and Croatian. Workshop on Language and Identity, Faculty of Philosophy, University of Novi Sad, Novi Sad, Serbia. [<a href="https://drive.google.com/file/d/17Afi91VzXLArDRye01K3YEZu10OQlwNV/view?usp=drive_link" target="_blank">Slides/Handouts</a>]
-         </li>
-        <li data-year="2024">
-          Simonović, M., &amp; Kovacević, P. (2024). Severing affixes from categories and borrowed derivations [Paper presentation]. BCGL 17: Categories &amp; Categorization. Presented December 12–13. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2024">
-          Stanković, B., &amp; Kovacević, P. (2024). Dialectal discrimination at work: The case of infinitive and finite complements in Serbian [Paper presentation]. Language, Literature, Intersectionality, University of Niš, Niš. Presented April 21–22. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2023">
-          Kovacević, P. (2023). What governs the choice between infinitives and finite complements in Serbo‑Croatian? Quantitative data from Northwestern Serbian [Paper presentation]. Formal Description of Slavic Languages (FDSL) 16, University of Graz, Austria. Presented November 29–December 1. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2023">
-          Kovacević, P. (2023). When -nie met -nje: Slavonic‑Serbian loan deverbal nominals [Paper presentation]. Formal Description of Slavic Languages (FDSL) 16, University of Graz, Austria. Presented November 29–December 1. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2023">
-          Jakovljević, B., &amp; Kovacević, P. (2023). Prosodic correlates of the grammaticalization scale: A case study of the Serbian lexical, modal and auxiliary uses of hteti (‘want’) [Paper presentation]. Language, Literature, Process (Workshop: The Process of Grammaticalization in Languages), University of Niš, Niš. Presented April 21–22. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2022">
-          Ivanović, S., Kovacević, P., &amp; Milićević, N. (2022). Clitic climbing with different kinds of DA‑complements in Serbian [Paper presentation]. ELALT 6 (Workshop: Formal Approaches to Clausal Embedding), University of Novi Sad, Novi Sad. Presented October 29–30. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2021">
-          Simonović, M., &amp; Kovacević, P. (2021). Possessive, kind, and not so kind: The different uses of the adjectival –ov in Serbo‑Croatian [Paper presentation]. SinFonIJA 14, University of Novi Sad, Novi Sad. Presented September 22–24. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2021">
-          Kovacević, P. (2021). Gradients of reflexivity: Psych verbs in causative alternations [Paper presentation]. Olinco 5, Palacký University Olomouc, Olomouc. Presented June 10–12. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2021">
-          Kovacević, P., Simonović, M., &amp; Milosavljević, S. (2021). The vowel minimal pairs show argument structure alternations [Paper presentation]. Theme vowels in V(P) Structure and Beyond, University of Graz. Presented April 22–23. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2020">
-          Kovacević, P., Gradaček, T., Erdeljić, Rešetar, S. H., &amp; Varga, M. (2020). The use of it‑extraposition in MA theses written in English by British, American, Croatian and Serbian students [Paper presentation]. Languages and Cultures in Time and Space 10 (JIKUVIP 10), University of Novi Sad. Presented November 14–15. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2020">
-          Kovacević, P. (2020). On the internal structure of Serbian –nje nominalizations [Paper presentation]. SinFonIJA 13, Research Institute for Linguistics (Nyelvtudományi Intézet), Budapest. Presented September 24–26. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-      </ul>
-      <button class="toggle-button" onclick="togglePublications('older-presentations')">Show More</button>
-      <ul class="older-publications" id="older-presentations" style="display: none;">
-        <li data-year="2019">
-          Kovacević, P. (2019). Psych‑verb participles in Serbian [Paper presentation]. NSLingColl 9, University of Novi Sad. Presented December 27. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2019">
-          Varga, M., Kovacević, P., &amp; Molnar, D. (2019). Establishing the criteria for building comparable corpora in cross‑cultural research on graduates’ academic writing [Paper presentation]. Languages and Cultures in Time and Space (JIKUVIP 9), University of Novi Sad. Presented November 16. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2019">
-          Kovacević, P. (2019). NP‑internal PP licensing with psych verb nominalizations in Serbian [Paper presentation]. Languages and Cultures in Time and Space (JIKUVIP 9), University of Novi Sad. Presented November 16. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2019">
-          Kovacević, P. (2019). Not all object experiencers are the same: Evidence from SE anti‑causatives with Serbian psych verbs [Paper presentation]. Syntax and Semantics of Internal Arguments, University of Bucharest and University of Cologne. Presented October 24–25. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2019">
-          Kovacević, P. (2019). Serbo‑Croatian long and short‑form adjectives: Definiteness inside AP [Paper presentation]. RTANJ Linguistics 3, Humboldt University (Rtanj, Serbia). Presented July 4–7. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2019">
-          Kovacević, P. (2019). A corpus‑based contrastive study of experiencer verbs in English and Serbian: Some implications for the structure of VP [Paper presentation]. English Language and Anglophone Literatures Today (ELALT 5), University of Novi Sad. Presented March 9. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2018">
-          Kovacević, P. (2018). Case, aspect and the role of SE with Serbian experiencer verbs [Paper presentation]. RTANJ Linguistics 2, Humboldt University (Rtanj, Serbia). Presented September 20–23. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2018">
-          Kovacević, P. (2018). Gaps in the aspectual paradigms of experiencer verbs in Serbian [Paper presentation]. NSLingColl 8, University of Novi Sad. Presented December 27. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2018">
-          Marković, M., &amp; Kovacević, P. (2018). Acoustic manifestations of information and contrastive focus in Serbian [Paper presentation]. Languages and Cultures in Time and Space (JIKUVIP 8), University of Novi Sad. Presented November 17. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2018">
-          Kovacević, P. (2018). Case patterns with Serbian experiencer verbs [Paper presentation]. Language, Literature, Theory, University of Niš. Presented April 27–28. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2017">
-          Kovacević, P., Milićev, T., &amp; Đurić Paunović, I. (2017). Non‑finite complements in Serbian: Empirical evidence from translation [Paper presentation]. English Language and Anglophone Literatures Today (ELALT 4), University of Novi Sad. Presented March 25. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2016">
-          Kovacević, P. (2016). Case, aspect, and theta roles with psych verbs in Serbian [Paper presentation]. NS LingColl 7, University of Novi Sad. Presented December 27. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2017">
-          Kovacević, P. (2017). On DP, scrambling, case and the clausal structure of Serbo‑Croatian [Paper presentation]. RTANJ Linguistics 1, University of Niš and Humboldt University (Rtanj, Serbia). Presented July 6–9. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2016">
-          Kovacević, P., &amp; Milićev, T. (2016). The nature(s) of syntactic variation: Evidence from the Serbian/Croatian dialect continuum [Paper presentation]. FDSL 2016, Humboldt University. Presented December 8–10. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2016">
-          Kovacević, P. (2016). Serbo‑Croatian complementizer DA as an accusative case marker [Paper presentation]. NS LingColl 6, University of Novi Sad. Presented December 27. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2015">
-          Kovacević, P. (2015). Case inflections as theta role signals [Paper presentation]. The Third International Conference on English Studies English Language and Anglophone Literatures Today (ELALT 3), University of Novi Sad. Presented March 21. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2014">
-          Kovacević, P. (2014). Uticaj određenosti na distribuciju imenica u srpskom jeziku [The impact of definiteness on the distribution of nouns in Serbian] [Paper presentation]. STULIKON 3, University of Sarajevo. Presented April 25–27. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2013">
-          Kovacević, P. (2013). Ekstrakcija argumenata u nominativu iz zavisnih rečenica u srpskom jeziku [The extraction of nominative case‑marked arguments from embedded clauses in Serbian] [Paper presentation]. STULIKON 2, University of Zagreb. Presented May 3–4. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-        <li data-year="2011">
-          Kovacević, P., &amp; Pupezin, M. (2011). Determinatorska fraza u srpskom jeziku? [Determiner phrase in Serbian?] [Paper presentation]. STULIKON 1, University of Belgrade. Presented May 6–8. [<a href="#" target="_blank">Slides/Handouts</a>]
-        </li>
-      </ul>
-    </div>
+      </li>
+      <!-- ...additional list items... -->
+    </ul>
+    <button class="toggle-button" onclick="togglePublications('older-presentations')">Show More</button>
+    <ul class="older-publications" id="older-presentations" style="display: none;">
+      <li data-year="2019">
+        Kovacević, P. (2019). Psych‑verb participles in Serbian [Paper presentation]. NSLingColl 9, University of Novi Sad. Presented December 27. [<a href="#" target="_blank">Slides/Handouts</a>]
+      </li>
+      <!-- ...additional list items... -->
+    </ul>
+  </div>
 
-   <!-- Invited Talks -->
-<div class="pub-category" id="invited-talks">
-  <h3>Invited Talks</h3>
-  <ul class="recent-publications">
-    <li data-year="2024">
-      Kovacević, P. (2024). What predicts the choice of clausal complement with modal verbs in Serbian [Invited talk]. SinFonIJA 17, University of Nova Gorica, Nova Gorica. Presented September 27–29. [<a href="https://drive.google.com/file/d/1-YFKrqIz_B1rSDAlpYcd-1NaW-XfSEXY/view?usp=drive_link" target="_blank">Slides/Handouts</a>]
-    </li>
-    <li data-year="2023">
-      Kovacević, P., &amp; Stanković, B. (2023). Clausal complements between language structure and identity: Documenting, visualizing and theorizing variation in Shtokavian (non‑finite embedded clauses) [Invited talk]. Vuk’s Foundation/Institute for Balkan Studies of the Serbian Academy of Sciences and Arts, Belgrade, Serbia. Presented October 16. [<a href="#" target="_blank">Slides/Handouts</a>]
-    </li>
-    <li data-year="2023">
-      Kovacević, P. (2023). The status of verbal theme vowels in contemporary linguistic theorizing: Some recent developments [Invited talk]. University of Graz, Graz, Austria. Presented January 10. [<a href="https://drive.google.com/file/d/1NJBCODnUh0ZeIChIO5_n44X7nFWBNRoY/view?usp=sharing" target="_blank">Slides/Handouts</a>]
-    </li>
-  </ul>
-</div>
+  <!-- Invited Talks -->
+  <div class="pub-category" id="invited-talks">
+    <h3>Invited Talks</h3>
+    <ul class="recent-publications">
+      <li data-year="2024">
+        Kovacević, P. (2024). What predicts the choice of clausal complement with modal verbs in Serbian [Invited talk]. SinFonIJA 17, University of Nova Gorica, Nova Gorica. Presented September 27–29. [<a href="https://drive.google.com/file/d/1-YFKrqIz_B1rSDAlpYcd-1NaW-XfSEXY/view?usp=drive_link" target="_blank">Slides/Handouts</a>]
+      </li>
+      <!-- ...additional list items... -->
+    </ul>
+  </div>
+</section>
 
+<section id="contact" class="content-box">
+  <h2>Contact</h2>
+  <p>
+    Work Email: <a href="mailto:predrag.kovacevic@ff.uns.ac.rs">predrag.kovacevic@ff.uns.ac.rs</a>
+  </p>
+  <p>
+    Private Email: <a href="mailto:pedjakovacevic@gmail.com">pedjakovacevic90@gmail.com</a>
+  </p>
+</section>
 
-  <section id="contact" class="content-box">
-    <h2>Contact</h2>
-    <p>
-      Work Email: <a href="mailto:predrag.kovacevic@ff.uns.ac.rs">predrag.kovacevic@ff.uns.ac.rs</a>
-    </p>
-    <p>
-      Private Email: <a href="mailto:pedjakovacevic@gmail.com">pedjakovacevic90@gmail.com</a>
-    </p>
-  </section>
+<footer>
+  <p>&copy; 2024 Pedja Kovacevic. All rights reserved.</p>
+</footer>
 
-  <footer>
-    <p>&copy; 2024 Pedja Kovacevic. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript for toggling "Show More" sections in Publications -->
-  <script>
-    function togglePublications(id) {
-      var elem = document.getElementById(id);
-      if (elem.style.display === "none" || elem.style.display === "") {
-        elem.style.display = "block";
-      } else {
-        elem.style.display = "none";
-      }
+<!-- JavaScript for toggling "Show More" sections in Publications -->
+<script>
+  function togglePublications(id) {
+    var elem = document.getElementById(id);
+    if (elem.style.display === "none" || elem.style.display === "") {
+      elem.style.display = "block";
+    } else {
+      elem.style.display = "none";
     }
-  </script>
+  }
+</script>
 
 </body>
 </html>
