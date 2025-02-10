@@ -67,22 +67,22 @@
       background: #005bb5;
     }
 
-    /* Social Links styling (without logos) */
+    /* Social Links styling (compact buttons without logos) */
     .social-links {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
     }
     .social-links a {
-      display: block;
+      display: inline-block;
       text-decoration: none;
       color: #0073e6;
-      font-size: 16px;
-      border: 2px solid #0073e6;
-      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #0073e6;
+      padding: 6px 12px;
       border-radius: 4px;
       transition: background-color 0.3s ease, color 0.3s ease;
-      text-align: center;
     }
     .social-links a:hover {
       background-color: #0073e6;
