@@ -59,21 +59,26 @@
       height: auto;
     }
 
-    /* CV Download Button styling */
-    .cv-download {
-      display: inline-block;
-      background: #0073e6;
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-      margin-bottom: 20px;
-    }
-    .cv-download:hover {
-      background: #005bb5;
-    }
+ /* Updated CV Download Button styling */
+.cv-download {
+  display: inline-block;
+  background: transparent;
+  color: #0073e6;
+  border: 2px solid #0073e6;
+  padding: 8px 16px;       /* Smaller padding */
+  border-radius: 3px;      /* Slightly rounded corners for a modern look */
+  text-decoration: none;
+  font-size: 14px;         /* Smaller font size */
+  font-family: 'Georgia', serif; /* A classic academic typeface */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.cv-download:hover {
+  background-color: #0073e6;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
     /* Social Links styling (compact buttons without logos) */
     .social-links {
@@ -151,7 +156,7 @@
       I am a linguist and an assistant professor in the English Department at the University of Novi Sad, Serbia.
     </p>
     <p style="text-align: center;">
-      <a class="cv-download" href="CV-Pedja-Kovacevic.pdf" download>📝 Download My CV</a>
+     <a href="CV-Pedja-Kovacevic.pdf" class="cv-download">Download CV</a>
     </p>
     <div class="social-links">
       <a href="https://scholar.google.com/citations?user=Ffj7avsAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>
